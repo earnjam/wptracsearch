@@ -1,0 +1,29 @@
+.results-header {
+	padding: 0 1em;
+}
+.result-list .status-toggle {
+	padding: 0 1em 0;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+}
+.result-list .status-toggle > a {
+	margin-left: 0;
+	margin-bottom: -1px;
+	border-radius: 4px 4px 0 0;
+	border-bottom: 1px solid #ccc;
+}
+.result-list .status-toggle .active,
+.pagination .button.active {
+	background: #0073AA;
+	border-bottom-color: #0073AA;
+}
+.results-container .selected-filters {
+	margin-bottom: 1em;
+}
+.description-toggle {
+    position: absolute;
+    right: 1em;
+    font-size: 1.3em;
+    padding-top: 10px;
+	cursor: pointer;
+}

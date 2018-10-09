@@ -1,0 +1,54 @@
+.label {
+  font-size: .85em;
+  display: inline-flex;
+  color: #fff;
+  background: #ccc;
+  padding: 1px 6px 3px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-transform: capitalize;
+}
+
+
+.label.color-red {
+	background: #DC3232;
+}
+
+.label.color-orange {
+	background: #F56E28;
+}
+
+.label.color-yellow {
+	background: #FFB900;
+	color: #32373c;
+}
+
+.label.color-green {
+	background: #46B450;
+}
+
+.label.color-blue {
+	background: #00A0D2;
+}
+
+.label.color-purple {
+	background: #826EB4;
+}
+
+/* Specific Overrides */
+.label.status {
+  background: #3d8543;
+  color: #fff;
+}
+
+.label.defect,
+.label.closed {
+  background: #b02828;
+  color: #fff;
+}
+
+.label.enhancement {
+  background: #c5def5;
+  color: #111;
+}

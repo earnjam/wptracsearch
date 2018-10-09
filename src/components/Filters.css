@@ -1,0 +1,9 @@
+.filter {
+	margin-bottom: 1em;
+}
+.filter:not(.type) {
+	color: #222;
+}
+.filter h2 {
+	color: #fff;
+}

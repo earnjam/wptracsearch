@@ -1,0 +1,25 @@
+.ticket-updates .comment {
+	position: relative;
+	z-index: 2;
+	padding-top: 20px;
+	display: flex;
+}
+
+.comment-col-avatar {
+	margin-right: 1rem;
+}
+
+.comment-col-main {
+	flex-grow: 1;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: calc( 100% - 48px - 1rem);
+}
+
+.comment-content {
+	padding: .3em 1.2em;
+	line-height: 1.2em;
+	background: #fff;
+	z-index: 2;
+	border-radius: 0 0 5px 5px;
+}

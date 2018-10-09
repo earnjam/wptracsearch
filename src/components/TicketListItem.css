@@ -1,0 +1,66 @@
+.ticket-list-item {
+  padding: .8em 1.2em .5em .7em;
+  border-bottom: 1px solid #efefef;
+  display:flex;
+}
+.ticket-icon {
+	flex: 0 0 1.5em;
+}
+.ticket-content {
+	flex: 1;
+}
+.ticket-summary {
+  flex-grow: 1;
+}
+
+.ticket-link {
+  text-decoration: none;
+  color: #222;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.ticket-link:hover {
+  text-decoration: underline;
+}
+
+.ticket-meta {
+  font-size: .85em;
+  margin: 5px 0;
+  color: #555;
+}
+
+.ticket-description {
+  font-size: .9em;
+  line-height: 1.3em;
+  word-break: break-word;
+}
+
+.comment-count {
+	font-size: .9em;
+}
+.comment-count,
+.ticket-meta .secondary {
+  text-align: right;
+}
+
+.red {
+	color: #cc481d;
+}
+.green {
+	color: #3d8543;
+}
+.blue {
+	color: #0073aa;
+}
+.ticket-list-item .secondary { 
+	flex: 0 0 200px;
+	flex-direction: row-reverse;
+}
+.flex.secondary img {
+	flex: 0;
+	vertical-align: middle;
+}
+.flex.secondary .comment-count {
+	flex: 0 0 50px;
+}

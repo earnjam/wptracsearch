@@ -1,0 +1,134 @@
+body {
+  background: #fff;
+  font-size: 16px;
+  color: #111;
+}
+
+a {
+    color: #21759b;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.app-container {
+  align-items: stretch;
+}
+.app-container,
+.app-container > * {
+}
+
+/* flex layouts */
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flex > * {
+  flex: 1 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+
+@media all and (min-width: 600px) {
+  .sidebar { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .results-container { flex: 4 0px; }
+  .ticket-summary { flex: 10 0px; }
+  .sidebar { order: 1; }
+  .results-container { order: 2; }
+}
+.title {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+.title .beta {
+  font-size: .5em;
+  font-style: italic;
+}
+.search-bar {
+  padding: 1em;
+}
+
+.selected-filters {
+  padding: 0 1em;
+}
+
+.sidebar {
+  background: #0073AA;
+  color: #fff;
+	padding: 1rem;
+}
+
+
+.status-list li {
+  float: left; 
+  margin-right: 10px;
+  display: inline-block;
+}
+
+mark {
+  background: rgb(253, 253, 195);
+}
+
+mark::before, 
+mark::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+mark::before {
+  content: " [highlight start] ";
+}
+
+mark::after {
+  content: " [highlight end] ";
+}
+
+
+
+.ReactModal__Overlay {
+  background: rgba(100,100,100,.7) !important;
+}
+
+.ReactModal__Content{
+  max-width: 960px !important;
+  left: calc(50% - 480px) !important;
+  padding: 2em !important;
+}
+
+body.ReactModal__Body--open {
+  overflow: hidden;
+}

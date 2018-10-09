@@ -1,0 +1,16 @@
+.close-modal {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: none;
+	border: none;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	color: #555;
+	cursor: pointer;
+}
+.close-modal svg.fa-times {
+	width: 25px;
+	height: 25px;
+}

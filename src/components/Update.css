@@ -1,0 +1,39 @@
+.update {
+    margin-left: calc(34px + 1rem + 2rem );
+}
+.update svg.svg-inline--fa {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 4px;
+    vertical-align: middle;
+    background: #efefef;
+    margin-right: 10px;
+}
+
+.status-label {
+    background: #45b645;
+    padding: .2rem .4rem;
+    border-radius: 3px;
+    color: #fff;
+}
+.status-label.closed {
+	background: #cb2431;
+}
+
+.update.resolution.closed svg {
+	border-radius: 16px;
+	color: #fff;
+}
+
+.update.resolution.fixed svg {
+	background: #45b645;
+	border-color: #45b645;
+}
+.update.resolution:not(.fixed) svg {
+	background: #cb2431;
+	border-color: #cb2431;
+	color: #fff;
+	border-radius: 16px;
+}

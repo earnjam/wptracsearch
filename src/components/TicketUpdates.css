@@ -1,0 +1,39 @@
+/* .update:before {
+    content: " ";
+    display: block;
+    border-left: 3px solid #ddd;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(48px + 1rem + 2rem);
+    z-index: -1;
+    width: 40px;
+} */
+.ticket-updates {
+	position: relative;
+}
+
+.ticket-updates:before {
+    content: " ";
+    display: block;
+	border-left: 3px solid #ddd;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(48px + 1rem + 2rem);
+    z-index: 1;
+    width: 40px;
+}
+
+.ticket-updates .attachment,
+.ticket-updates .comment,
+.ticket-updates .update {
+	padding-top: 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.attachment img {
+	margin-left: 44px;
+	max-width: calc(100% - 44px);
+}

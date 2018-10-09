@@ -1,0 +1,73 @@
+.ticket-properties {
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 1rem;
+	line-height: 1.8em;
+}
+.ticket-header,
+.ticket-people {
+	display: flex;
+	flex-flow: row;
+}
+.ticket-header > div,
+.ticket-people > div {
+	flex: 1;
+}
+.ticket-header > div {
+	padding-right: 1em;
+}
+.ticket-header .ticket-number {
+	flex: 1;
+	padding-right: 1em;
+	font-size: 1.5em;
+}
+.ticket-header .ticket-trac-link {
+	flex: 3;
+	text-align: left;
+}
+.btn.trac-link {
+	border: 1px solid #0073aa;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 5px;
+	padding: .4em .5em;
+	word-wrap: none;
+}
+
+.btn.trac-link .fa-external-link-alt {
+	margin-bottom: 2px;
+	margin-left: 5px;
+	font-size: .8em;
+}
+.ticket-header .ticket-type {
+	flex: 2;
+}
+
+.ticket-header .dates {
+	text-align: right;
+	flex: 4 1 200px;
+	font-size: .8em;
+    line-height: 1.5em;
+	padding: 0;
+}
+.ticket-people img {
+	vertical-align: top;
+	margin: 0 10px;
+}
+.ticket-taxonomy {
+	display: flex;
+	flex-flow: row wrap;
+}
+.ticket-taxonomy > div {
+	width: 50%;
+	display: flex;
+	border-bottom: 1px solid #efefef;
+}
+.ticket-taxonomy > div > div {
+	flex: 1 100%;
+}
+.property-value span {
+	margin-right: 10px;
+	display: inline-block;
+}
