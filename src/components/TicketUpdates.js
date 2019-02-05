@@ -53,9 +53,7 @@ class TicketUpdates extends Component {
 					key={key}
 				/>;
 			case 'cc':
-				return <Update key={key} update={update}>
-						<UserLink user={user} /> cc'd <UserLink user={user} /> <Time time={time} />
-					</Update>
+				return null;
 			case 'attachment':
 				const filetype = this.determineFileType( link );
 				switch ( filetype ) {
