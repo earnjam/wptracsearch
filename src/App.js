@@ -42,7 +42,7 @@ class App extends Component {
           app="wptrac"
           url="https://es.wpteamhub.com/"
         >
-          <div className="flex app-container">
+          <div className="flex row-reverse app-container">
             <Header toggleShowDesc={this.toggleShowDesc} />
             <div className="results-container">
               <DataSearch
@@ -55,7 +55,7 @@ class App extends Component {
               />
               <SelectedFilters className="selected-filters" />
               <Results showDesc={this.state.showDesc} toggleDesc={this.toggleDesc} showTicket={this.openModal} />
-              <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal}>
+              <Modal className="modal" isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal}>
                 <Ticket ticket={this.state.modalTicket} close={this.closeModal}/>
               </Modal>
             </div>

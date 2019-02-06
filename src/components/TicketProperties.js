@@ -12,13 +12,15 @@ class TicketProperties extends Component {
 		if ( user ) {
 			return (
 				<div className="ticket-assignee">
-					Owned by: 
-					<Avatar user={user} />
-					<UserLink user={user} />
+					<div className="property-label">Owned by: </div>
+					<div className="property-value">
+						<Avatar user={user} />
+						<UserLink user={user} />
+					</div>
 				</div>
 			);
 		}
-		return <div className="ticket-assignee unassigned">Owned by: </div>
+		return <div className="ticket-assignee unassigned"><div className="property-label">Owned by: </div></div>
 	}
 	parseTerms = ( terms, type ) => {
 		return terms.map( ( term ) => <span className={type}>{term}</span> );
@@ -43,26 +45,31 @@ class TicketProperties extends Component {
 			version } = this.props.ticket;
 		return (
 			<div className="ticket-properties">
-				<div className="ticket-header">
-					<div className="ticket-number">#{this.props.ticket._id}</div>
-					<div className="ticket-trac-link"><a href={link} className="btn trac-link">View on Trac <i className="fas fa-external-link-alt"></i></a></div>
+				<div className="flex ticket-header">
+					<h2>
+						<span className="ticket-number">#{this.props.ticket._id}</span> – <span>{summary}</span>
+					</h2>
+					{/* <div className="ticket-trac-link"><a href={link} className="btn trac-link">View on Trac <i className="fas fa-external-link-alt"></i></a></div> */}
+				</div>
+				<div className="flex ticket-subheader">
 					<div className="ticket-status"><Label type="status" value={status} /></div>
 					<div className="ticket-type"><Label type="ticket_type" value={ticket_type} /></div>
 					<div className="dates">
 						<div className="ticket-created">Opened {moment(created).fromNow()}</div>
-						<div className="ticket-updated">Updated {moment(updated).fromNow()}</div>
+						<div className="ticket-updated">Last Updated {moment(updated).fromNow()}</div>
 					</div>
 				</div>
-				<h2>{summary}</h2>
-				<div className="ticket-people">
+				<div className="flex ticket-people">
 					<div className="ticket-reporter">
-						Reported by: 
-						<Avatar user={reporter} />
-						<UserLink user={reporter} />
+						<div className="property-label">Reported by: </div>
+						<div className="property-value">
+							<Avatar user={reporter} />
+							<UserLink user={reporter} />
+						</div>
 					</div>
 					{this.getAssigned( owner )}
 				</div>
-				<div className="ticket-taxonomy">
+				<div className="flex ticket-taxonomy">
 					<div className="ticket-milestone">
 						<div className="property-label">Milestone:</div>
 						<div className="property-value">{milestone}</div>

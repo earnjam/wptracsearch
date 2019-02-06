@@ -5,7 +5,7 @@ import './Filters.css';
 class Filters extends Component {
 	render() {
 		return (
-			<div className="filters">
+			<div className="filters hidden flex column">
 				{/* <MultiList
 					className="status"
 					componentId="status"

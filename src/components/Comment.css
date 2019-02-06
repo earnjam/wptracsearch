@@ -23,3 +23,9 @@
 	z-index: 2;
 	border-radius: 0 0 5px 5px;
 }
+
+@media (max-width: 1200px) {
+	.comment-col-avatar {
+		display: none;
+	}
+}

@@ -14,20 +14,9 @@ img {
   max-width: 100%;
 }
 
-.app-container {
-  align-items: stretch;
-}
-.app-container,
-.app-container > * {
-}
-
 /* flex layouts */
 .flex {
   display: flex;
-  flex-direction: row;
-}
-.flex > * {
-  flex: 1 100%;
 }
 
 .column {
@@ -55,16 +44,8 @@ img {
 }
 
 
-@media all and (min-width: 600px) {
-  .sidebar { flex: 1 0 0; }
-}
 
-@media all and (min-width: 800px) {
-  .results-container { flex: 4 0px; }
-  .ticket-summary { flex: 10 0px; }
-  .sidebar { order: 1; }
-  .results-container { order: 2; }
-}
+
 .title {
   font-size: 1.8em;
   margin-top: 0;
@@ -85,6 +66,14 @@ img {
   background: #0073AA;
   color: #fff;
 	padding: 1rem;
+  width: 300px;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+}
+
+.results-container {
+  width: calc(100% - 300px);
 }
 
 
@@ -117,18 +106,42 @@ mark::after {
   content: " [highlight end] ";
 }
 
-
-
 .ReactModal__Overlay {
   background: rgba(100,100,100,.7) !important;
+  overflow: scroll;
 }
 
-.ReactModal__Content{
-  max-width: 960px !important;
-  left: calc(50% - 480px) !important;
-  padding: 2em !important;
+.ReactModal__Content {
+  background: #fff;
+  max-width: 960px;
+  margin: 2em auto;
+  padding: 1.5em;
 }
 
 body.ReactModal__Body--open {
   overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  .results-container {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .hidden {
+    display: none;
+  }
+  h1.title {
+    margin-bottom: 0;
+  }
+  .ReactModal__Content {
+    margin: 0;
+    width: calc(100% - 3em);
+    padding-top: 2em;
+  }
 }

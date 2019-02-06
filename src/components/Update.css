@@ -37,3 +37,9 @@
 	color: #fff;
 	border-radius: 16px;
 }
+
+@media (max-width: 1200px) {
+	.update {
+		margin-left: 1rem;
+	}
+}

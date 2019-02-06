@@ -37,3 +37,9 @@
 	margin-left: 44px;
 	max-width: calc(100% - 44px);
 }
+
+@media (max-width: 1200px) {
+	.ticket-updates:before {
+		left: 2rem;
+	}
+}

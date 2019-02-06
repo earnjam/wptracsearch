@@ -1,16 +1,22 @@
 .close-modal {
 	position: absolute;
-	top: 5px;
-	right: 5px;
+	top: 4px;
+	right: 4px;
 	background: none;
 	border: none;
-	width: 25px;
-	height: 25px;
 	padding: 0;
 	color: #555;
 	cursor: pointer;
+	font-size: 1em;
 }
 .close-modal svg.fa-times {
 	width: 25px;
 	height: 25px;
+}
+
+@media (max-width: 800px) {
+	.close-modal {
+		top: 0;
+		right: 0;
+	}
 }

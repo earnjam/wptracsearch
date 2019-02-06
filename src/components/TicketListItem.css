@@ -54,7 +54,7 @@
 	color: #0073aa;
 }
 .ticket-list-item .secondary { 
-	flex: 0 0 200px;
+	/* flex: 0 0 200px; */
 	flex-direction: row-reverse;
 }
 .flex.secondary img {
