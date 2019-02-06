@@ -23,8 +23,9 @@
 }
 .title .toggle-btn {
 	font-size: 1.5em;
+	display: none;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
 	.header {
 		width: 100%;
 		display: flex;
@@ -32,16 +33,25 @@
 		flex-direction: column;
 		z-index: 1;
 	}
+	.title .toggle-btn {
+		display: block;
+	}
 	.filters {
 		display: none;
 	}
 	.header.expanded {
-		position: absolute;
+		overflow: scroll;
 	}
 	.header.expanded .filters {
 		display: block;
 	}
 	.title h1 {
 		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.header.expanded {
+		height: 100vh;
 	}
 }
