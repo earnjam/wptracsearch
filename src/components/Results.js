@@ -7,7 +7,7 @@ class Results extends Component {
 	render() {
 		return (
 			<div className="result-list">
-				<div className="description-toggle" onClick={this.props.toggleDesc}><i className="fas fa-sliders-h" /></div>
+				<div className="description-toggle" onClick={this.props.toggleDesc}><i className="fas fa-list" /></div>
 				<ToggleButton
 					className="status-toggle"
 					componentId="status"
