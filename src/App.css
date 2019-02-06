@@ -47,6 +47,9 @@ img {
 .search-bar {
   padding: 1em;
 }
+.search-bar input {
+  font-size: 16px;
+}
 
 .selected-filters {
   padding: 0 1em;
