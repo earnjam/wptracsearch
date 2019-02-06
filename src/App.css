@@ -111,7 +111,7 @@ body.ReactModal__Body--open {
   body.ReactModal__Body--open {
     overflow: auto;
   }
-  .ReactModal__Body--open .root {
+  .ReactModal__Body--open #root {
     display: none;
   }
   .ReactModal__Overlay {
