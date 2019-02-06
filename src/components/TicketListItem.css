@@ -18,6 +18,7 @@
   color: #222;
   font-size: 1em;
   font-weight: bold;
+  word-break: break-word;
 }
 
 .ticket-link:hover {
