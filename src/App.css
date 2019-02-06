@@ -88,6 +88,7 @@ mark::after {
 .ReactModal__Overlay {
   background: rgba(100,100,100,.7) !important;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   z-index: 10;
 }
 
