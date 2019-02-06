@@ -103,13 +103,15 @@ body.ReactModal__Body--open {
 }
 
 @media (max-width: 1200px) {
+  .ReactModal__Content {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 1000px) {
   .results-container {
     width: 100%;
     margin-top: 70px;
-  }
-  .ReactModal__Content {
-    margin: 0;
-    width: calc(100% - 3em);
-    padding-top: 2em;
   }
 }
