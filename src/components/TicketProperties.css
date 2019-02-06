@@ -8,6 +8,7 @@
 .ticket-header h2 {
 	margin-top: 0;
 	flex: 4 0 0;
+	word-break: break-word;
 }
 .ticket-header .ticket-trac-link {
 	flex: 1 0 0;
