@@ -90,7 +90,8 @@ mark::after {
 
 .ReactModal__Overlay {
   background: rgba(100,100,100,.7) !important;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   z-index: 10;
 }
@@ -107,6 +108,15 @@ body.ReactModal__Body--open {
 }
 
 @media (max-width: 1200px) {
+  body.ReactModal__Body--open {
+    overflow: auto;
+  }
+  .ReactModal__Body--open .root {
+    display: none;
+  }
+  .ReactModal__Overlay {
+    position: absolute !important;
+  }
   .ReactModal__Content {
     margin: 0;
     width: 100%;

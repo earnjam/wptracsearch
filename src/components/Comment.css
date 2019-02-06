@@ -28,4 +28,7 @@
 	.comment-col-avatar {
 		display: none;
 	}
+	.comment-content {
+		word-break: break-word;
+	}
 }
