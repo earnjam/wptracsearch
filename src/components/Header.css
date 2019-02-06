@@ -1,0 +1,47 @@
+.header {
+	background: #0073AA;
+	color: #fff;
+	padding: 1rem;
+	width: 300px;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+}
+.title {
+	display: flex;
+}
+.title .logo {
+	flex: 1;
+}
+.title h1 {
+	font-size: 1.8em;
+	margin-top: 0;
+}
+.title .beta {
+	font-size: .5em;
+	font-style: italic;
+}
+.title .toggle-btn {
+	font-size: 1.5em;
+}
+@media (max-width: 1200px) {
+	.header {
+		width: 100%;
+		display: flex;
+		height: auto;
+		flex-direction: column;
+		z-index: 1;
+	}
+	.filters {
+		display: none;
+	}
+	.header.expanded {
+		position: absolute;
+	}
+	.header.expanded .filters {
+		display: block;
+	}
+	.title h1 {
+		margin-bottom: 0;
+	}
+}

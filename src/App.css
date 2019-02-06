@@ -44,16 +44,6 @@ img {
 }
 
 
-
-
-.title {
-  font-size: 1.8em;
-  margin-top: 0;
-}
-.title .beta {
-  font-size: .5em;
-  font-style: italic;
-}
 .search-bar {
   padding: 1em;
 }
@@ -62,20 +52,9 @@ img {
   padding: 0 1em;
 }
 
-.sidebar {
-  background: #0073AA;
-  color: #fff;
-	padding: 1rem;
-  width: 300px;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-}
-
 .results-container {
   width: calc(100% - 300px);
 }
-
 
 .status-list li {
   float: left; 
@@ -109,6 +88,7 @@ mark::after {
 .ReactModal__Overlay {
   background: rgba(100,100,100,.7) !important;
   overflow: scroll;
+  z-index: 10;
 }
 
 .ReactModal__Content {
@@ -123,21 +103,9 @@ body.ReactModal__Body--open {
 }
 
 @media (max-width: 1200px) {
-  .sidebar {
-    width: 100%;
-    display: flex;
-    height: auto;
-    flex-direction: column;
-  }
   .results-container {
     width: 100%;
-    margin-top: 100px;
-  }
-  .hidden {
-    display: none;
-  }
-  h1.title {
-    margin-bottom: 0;
+    margin-top: 70px;
   }
   .ReactModal__Content {
     margin: 0;

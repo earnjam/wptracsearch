@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Filters from './Filters';
 
+import './Header.css';
 class Header extends Component {
 	constructor(props) {
 		super(props);
@@ -16,9 +17,11 @@ class Header extends Component {
 	}
 	render() {
 		return (
-			<div className="sidebar">
-				<h1 className="title logo">WPtracSearch <span className="beta">(beta)</span></h1>
-				{/* <div className="btn toggle-btn" onClick={this.toggleVisibility}>Toggle Filters</div> */}
+			<div className={ `header ${ (this.state.visible) ? 'expanded' : '' }` }>
+				<div className="title">
+					<h1 className="logo">WPtracSearch <span className="beta">(beta)</span></h1>
+					<div className="btn toggle-btn" onClick={this.toggleVisibility}><i class="fas fa-filter"></i></div>
+				</div>
 				<Filters visible={this.state.visible} />
 			</div>
 		);
