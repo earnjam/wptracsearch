@@ -9,6 +9,15 @@ import Label from './Label';
 import './TicketProperties.css';
 
 class TicketProperties extends Component {
+	getStatusLabel = ( status, resolution ) => {
+		if ( status === 'closed' ) {
+			if ( resolution === 'fixed' ) {
+				return <Label type="status" value={resolution} icon="check-circle" />;
+			}
+			return <Label type="status" value={resolution} icon="times-circle" />;
+		}
+		return <Label type="status" value={status} />;
+	}
 	getAssigned = ( user ) => {
 		if ( user ) {
 			return (
@@ -38,6 +47,7 @@ class TicketProperties extends Component {
 			owner,
 			priority,
 			reporter,
+			resolution,
 			severity,
 			summary,
 			status,
@@ -52,7 +62,7 @@ class TicketProperties extends Component {
 					{/* <div className="ticket-trac-link"><a href={link} className="btn trac-link">View on Trac <i className="fas fa-external-link-alt"></i></a></div> */}
 				</div>
 				<div className="flex ticket-subheader">
-					<div className="ticket-status"><Label type="status" value={status} /></div>
+					<div className="ticket-status">{this.getStatusLabel( status, resolution )}</div>
 					<div className="ticket-type"><Label type="ticket_type" value={ticket_type} /></div>
 					<div className="dates">
 						<div className="ticket-created">Opened {moment(created).fromNow()}</div>

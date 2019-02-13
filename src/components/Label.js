@@ -21,4 +21,10 @@ const getColor = name => {
 	return color;
 }
 
-export default ({ type, value }) => <span className={ `label ${type} ${value} color-${getColor(value)}` }>{value}</span>;
+const getIcon = icon => {
+	return ( icon ) ? <i className={ `fas fa-${icon}` }></i> : '';
+}
+
+export default function Label ( { type, value, icon } ) {
+	return <span className={ `label ${type} ${value} color-${getColor(value)}` }>{getIcon(icon)}{value}</span>;
+}

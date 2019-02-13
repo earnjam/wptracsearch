@@ -14,8 +14,15 @@
 	flex: 1 0 0;
 	text-align: right;
 }
+.ticket-subheader {
+	margin-bottom: 15px;
+}
 .ticket-subheader > div {
 	padding-right: 1em;
+}
+.ticket-subheader .dates {
+	flex-grow: 1;
+	text-align:right;
 }
 .ticket-taxonomy,
 .ticket-taxonomy > div,
@@ -45,9 +52,13 @@
 	vertical-align: top;
 	margin: 0 10px;
 }
+.ticket-people > div,
 .ticket-taxonomy > div {
 	width: 50%;
 	border-bottom: 1px solid #efefef;
+}
+.ticket-people > div {
+	padding-bottom: 10px;
 }
 .property-label {
 	font-weight: bold;
@@ -56,6 +67,10 @@
 	margin-right: 10px;
 	display: inline-block;
 }
+.ticket-status svg {
+	padding-top: .5em;
+    padding-right: .4em;
+}
 
 @media (max-width: 800px) {
 	.ticket-properties > *{
@@ -63,8 +78,7 @@
 		flex-shrink: 0;
 	}
 	.ticket-people,
-	.ticket-taxonomy,
-	.ticket-subheader {
+	.ticket-taxonomy {
 		flex-flow: column;
 		width: 100%;
 	}

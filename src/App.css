@@ -100,9 +100,11 @@ mark::after {
 .ReactModal__Content {
   background: #fff;
   max-width: 960px;
-  margin: 2em auto;
-  padding: 1.5em;
+  margin: 0 auto;
+  padding: 2em 1.5em;
   border-radius: 5px;
+  position: absolute;
+  left: calc( 50% - 480px - 1.5em );
 }
 .ReactModal__Content:focus {
   outline: none;
@@ -112,7 +114,7 @@ body.ReactModal__Body--open {
   overflow: hidden;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 980px) {
   body.ReactModal__Body--open {
     overflow: auto;
   }
@@ -124,9 +126,11 @@ body.ReactModal__Body--open {
   }
   .ReactModal__Content {
     margin: 0;
+    max-width: 100%;
     width: 100%;
-    padding: 0;
+    padding: 2em 0;
     border-radius: none;
+    left: 0;
   }
 }
 @media (max-width: 1000px) {

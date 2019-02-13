@@ -1,3 +1,14 @@
+.ticket {
+	margin-top: 1.5em;
+}
+.traclink {
+	position: absolute;
+	top: .75em;
+	left: 1.5em;
+}
+.traclink svg {
+	margin-left: 7px;
+}
 .close-modal {
 	position: absolute;
 	top: 4px;
@@ -14,9 +25,12 @@
 	height: 25px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
 	.close-modal {
-		top: 0;
-		right: 0;
+		top: 4px;
+		right: 4px;
+	}
+	.traclink {
+		left: 0;
 	}
 }

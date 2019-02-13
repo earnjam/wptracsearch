@@ -32,6 +32,10 @@
 	background: #00A0D2;
 }
 
+.label.color-wpblue {
+  background: #0073AA;
+}
+
 .label.color-purple {
 	background: #826EB4;
 }
@@ -43,7 +47,8 @@
 }
 
 .label.defect,
-.label.closed {
+.label.closed,
+.label.status:not(.fixed) {
   background: #b02828;
   color: #fff;
 }
@@ -51,4 +56,8 @@
 .label.enhancement {
   background: #c5def5;
   color: #111;
+}
+
+.label.button {
+  padding: .75em 1em;
 }
