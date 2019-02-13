@@ -7,6 +7,10 @@
 	left: 0;
 	position: fixed;
 }
+.header a {
+	color: #fff;
+	text-decoration: underline;
+}
 .title {
 	display: flex;
 }
@@ -16,6 +20,7 @@
 .title h1 {
 	font-size: 1.8em;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 .title .beta {
 	font-size: .5em;
@@ -24,6 +29,9 @@
 .title .toggle-btn {
 	font-size: 1.5em;
 	display: none;
+}
+.subheading {
+	font-size: .9em;
 }
 @media (max-width: 1000px) {
 	.header {
