@@ -1,4 +1,4 @@
-# WPtracSearch
+# WPTracSearch
 
 This is a React powered application for searching WordPress Trac tickets using an Elasticsearch cluster. 
 
