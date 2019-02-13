@@ -9,12 +9,12 @@ import './TicketListItem.css';
 class TicketListItem extends Component {
 	getStatusString = ( status ) => {
 		if ( status === 'closed' && this.props.ticket.resolution ) {
-			return status + ": " + this.props.ticket.resolution;
+			return '(' + this.props.ticket.resolution + ')';
 		}
 		return null;
 	}
 	getSummary = () => {
-		return <span>{this.props.ticket.summary} (<em>{this.getStatusString(this.props.ticket.status)}</em>)</span>;
+		return <span>{this.props.ticket.summary} <em>{this.getStatusString(this.props.ticket.status)}</em></span>;
 	}
 	getDescription = () => {
 		let desc = this.props.ticket.description;
