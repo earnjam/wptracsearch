@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 class TicketAttachments extends Component {
 	getAllAttachmentLinks( updates ) {
-		const attachments = updates.reduce( ( attachments, updates ) => { console.log(updates); attachments.concat(updates.link) } );
-		console.log(attachments);
+		// @todo parse through updates to pull out attachment links
 		return '';
 	}
 	render() {
@@ -11,7 +10,7 @@ class TicketAttachments extends Component {
 		return (
 			<div className="ticket-attachments">
 				<ul>
-					{this.getAllAttachmentLinks}
+					{this.getAllAttachmentLinks( updates )}
 				</ul>
 			</div>
 		);

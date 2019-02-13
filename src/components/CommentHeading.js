@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import moment from 'moment';
+
 import UserLink from './UserLink';
 
 import './CommentHeading.css';

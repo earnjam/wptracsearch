@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+
 import Filters from './Filters';
 
 import './Header.css';
+
 class Header extends Component {
 	constructor(props) {
 		super(props);

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import moment from 'moment';
 
-export default ( { time, className } ) => (
-	<span className={ `timestamp ${ className }` }>
+export default function Time( { time, className } ) {
+	return <span className={ `timestamp ${ className }` }>
 		{moment(time).fromNow()}
-	</span> 
-);
+	</span>;
+}

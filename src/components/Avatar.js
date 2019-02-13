@@ -2,8 +2,8 @@ import React from 'react';
 
 import './Avatar.css';
 
-export default ({ user, size = 48 }) => (
-	<img
+export default function Avatar( { user, size = 48 } ) {
+	return <img
 		alt=""
 		title={ `@${ user }` }
 		className="Avatar"
@@ -17,5 +17,5 @@ export default ({ user, size = 48 }) => (
 			width: size,
 			height: size
 		}}
-	/>
-);
+	/>;
+}

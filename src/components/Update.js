@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 import UpdateIcon from './UpdateIcon';
 
 import './Update.css';
 
-export default ( { children, update, className } ) => (
-	<div className={`update ${ update.update_type } ${ className }`}>
+export default function Update( { children, update, className } ) {
+	return <div className={`update ${ update.update_type } ${ className }`}>
 		<UpdateIcon update={update} />
 		{ children }
-	</div>
-);
+	</div>;
+}

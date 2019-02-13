@@ -7,3 +7,7 @@
 .filter h2 {
 	color: #fff;
 }
+.filter button,
+.filter input {
+	border-radius: 5px;
+}

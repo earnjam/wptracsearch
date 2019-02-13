@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Avatar from './Avatar';
 import UserLink from './UserLink';
 import Time from './Time';

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+
 import FormattedText from './FormattedText';
 import Avatar from './Avatar';
 import UserLink from './UserLink';
@@ -32,7 +33,6 @@ class TicketProperties extends Component {
 			description, 
 			focuses, 
 			keywords,
-			link,
 			milestone, 
 			updated,
 			owner,

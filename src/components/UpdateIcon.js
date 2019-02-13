@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function( { update } ) {
+export default function UpdateIcon( { update } ) {
 	switch( update.update_type ){
 		case 'attachment':
 			return <i className="fas fa-upload"></i>;
