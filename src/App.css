@@ -114,6 +114,26 @@ body.ReactModal__Body--open {
   overflow: hidden;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 0 20px;
+  color: #fff;
+  background: #23282D;
+  font-size: .9em;
+}
+
+.footer a {
+  color: #00A0D2;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 980px) {
   body.ReactModal__Body--open {
     overflow: auto;

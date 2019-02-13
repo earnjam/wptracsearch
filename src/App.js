@@ -59,6 +59,9 @@ class App extends Component {
                 <Ticket ticket={this.state.modalTicket} close={this.closeModal}/>
               </Modal>
             </div>
+            <div className="footer">
+              <p>Created by <a href="https://twitter.com/earnjam">William Earnhardt</a> | Powered by <a href="https://www.bluehost.com">Bluehost</a> | <a href="https://github.com/earnjam/wptracsearch">View on GitHub</a></p>
+            </div>
           </div>
         </ReactiveBase>
       </section>

@@ -24,7 +24,6 @@ class Header extends Component {
 					<h1 className="logo">WPTracSearch <span className="beta">(beta)</span></h1>
 					<div className="btn toggle-btn" onClick={this.toggleVisibility}><i class="fas fa-filter"></i></div>
 				</div>
-				<p className="subheading">Created by <a href="https://twitter.com/earnjam">William Earnhardt</a><br /><a href="https://github.com/earnjam/wptracsearch">View on GitHub</a></p>
 				<Filters visible={this.state.visible} />
 			</div>
 		);
