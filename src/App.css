@@ -49,6 +49,7 @@ img {
 }
 .search-bar input {
   font-size: 16px;
+  border-radius: 5px;
 }
 
 .selected-filters {
@@ -101,6 +102,10 @@ mark::after {
   max-width: 960px;
   margin: 2em auto;
   padding: 1.5em;
+  border-radius: 5px;
+}
+.ReactModal__Content:focus {
+  outline: none;
 }
 
 body.ReactModal__Body--open {
@@ -121,6 +126,7 @@ body.ReactModal__Body--open {
     margin: 0;
     width: 100%;
     padding: 0;
+    border-radius: none;
   }
 }
 @media (max-width: 1000px) {
