@@ -21,7 +21,7 @@ class Header extends Component {
 		return (
 			<div className={ `header ${ (this.state.visible) ? 'expanded' : '' }` }>
 				<div className="title">
-					<h1 className="logo">WPTracSearch <span className="beta">(beta)</span></h1>
+					<h1 className="logo">WPTracSearch</h1>
 					<div className="btn toggle-btn" onClick={this.toggleVisibility}><i class="fas fa-filter"></i></div>
 				</div>
 				<Filters visible={this.state.visible} />

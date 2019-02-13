@@ -22,16 +22,9 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.title .beta {
-	font-size: .5em;
-	font-style: italic;
-}
 .title .toggle-btn {
 	font-size: 1.5em;
 	display: none;
-}
-.subheading {
-	font-size: .9em;
 }
 @media (max-width: 1000px) {
 	.header {
