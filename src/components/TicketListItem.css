@@ -9,7 +9,7 @@
 .ticket-content {
 	flex: 1;
 }
-.ticket-summary {
+.ticket-list-item .primary {
   flex-grow: 1;
 }
 
