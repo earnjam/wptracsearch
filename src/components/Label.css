@@ -10,7 +10,7 @@
   text-transform: capitalize;
 }
 
-
+/* Auto-generated color classes */
 .label.color-red {
 	background: #DC3232;
 }
@@ -42,13 +42,20 @@
 
 /* Specific Overrides */
 .label.status {
-  background: #3d8543;
+  background: #0073AA;
+  color: #fff;
+}
+
+.label.fixed {
+  background: #46B450;
   color: #fff;
 }
 
 .label.defect,
-.label.closed,
-.label.status:not(.fixed) {
+.label.wontfix,
+.label.invalid,
+.label.maybelater,
+.label.duplicate {
   background: #b02828;
   color: #fff;
 }

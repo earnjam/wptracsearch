@@ -16,7 +16,7 @@ class TicketProperties extends Component {
 			}
 			return <Label type="status" value={resolution} icon="times-circle" />;
 		}
-		return <Label type="status" value={status} />;
+		return <Label type="status" value={status} icon="flag" />;
 	}
 	getAssigned = ( user ) => {
 		if ( user ) {
