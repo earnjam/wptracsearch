@@ -33,3 +33,9 @@
 .selected-filters:empty {
 	display: none;
 }
+
+@media (max-width: 960px) {
+	.result-list {
+		padding-bottom: 0;
+	}
+}

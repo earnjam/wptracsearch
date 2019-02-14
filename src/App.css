@@ -135,6 +135,12 @@ body.ReactModal__Body--open {
 }
 
 @media (max-width: 980px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .footer {
+    position: relative;
+  }
   body.ReactModal__Body--open {
     overflow: auto;
   }
