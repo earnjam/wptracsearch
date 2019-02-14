@@ -58,6 +58,17 @@ export default function Filters() {
 				fuzziness={1}
 				URLParams
 			/>
+			<DataSearch
+				className="filter owner"
+				componentId="owner"
+				dataField="owner"
+				title="Assigned to:"
+				filterLabel="Assigned to"
+				placeholder="username"
+				autosuggest
+				fuzziness={1}
+				URLParams
+			/>
 		</div>
 	);
 }

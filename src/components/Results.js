@@ -48,7 +48,7 @@ export default function Results( props ) {
 				componentId="SearchResults"
 				from={0}
 				size={20}
-				react={{and:["status","reporter","search", "status", "focuses", "type", "component", "milestone"]}}
+				react={{and:["component", "focuses", "milestone", "owner", "reporter", "search", "status", "type"]}}
 				onData={(data) => <TicketListItem showTicket={props.showTicket} ticket={data} key={data._id} showDesc={props.showDesc} /> }
 				URLParams
 				pagination
