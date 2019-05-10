@@ -15,7 +15,7 @@ export default function Filters() {
 				selectAllLabel="All"
 				showSearch={false}
 				URLParams
-				react={{and:["search","status","focuses","component","milestone"]}}
+				react={{and:["search","status","focuses","component","milestone","keywords"]}}
 			/>
 			<SingleDropdownList
 				className="filter milestone"
@@ -26,7 +26,7 @@ export default function Filters() {
 				sortBy="desc"
 				showSearch
 				URLParams
-				react={{and:["search","status","type","focuses","component"]}}
+				react={{and:["search","status","type","focuses","component","keywords"]}}
 			/>
 			<SingleDropdownList
 				className="filter component"
@@ -36,13 +36,22 @@ export default function Filters() {
 				filterLabel="Component"
 				showSearch
 				URLParams
-				react={{and:["search","status","type","focuses","milestone"]}}
+				react={{and:["search","status","type","focuses","milestone","keywords"]}}
 			/>
 			<MultiDropdownList
 				className="filter focuses"
 				componentId="focuses"
 				dataField="focuses"
 				title="Focuses:"
+				showSearch
+				URLParams
+				react={{and:["search","satus","type","component","milestone","keywords"]}}
+			/>
+			<MultiDropdownList
+				className="filter keywords"
+				componentId="keywords"
+				dataField="keywords"
+				title="Keywords:"
 				showSearch
 				URLParams
 				react={{and:["search","satus","type","component","milestone"]}}
