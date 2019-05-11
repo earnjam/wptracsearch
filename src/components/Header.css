@@ -1,11 +1,12 @@
 .header {
 	background: #0073AA;
 	color: #fff;
-	padding: 1rem;
+	padding: 1rem 1rem 4rem 1rem;
 	width: 300px;
 	height: 100vh;
 	left: 0;
 	position: fixed;
+	overflow: auto;
 }
 .header a {
 	color: #fff;
