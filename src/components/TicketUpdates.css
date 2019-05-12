@@ -9,6 +9,10 @@
     z-index: -1;
     width: 40px;
 } */
+.update {
+    display: inline-flex;
+}
+
 .ticket-updates {
 	position: relative;
 }
