@@ -37,15 +37,22 @@ class TicketUpdates extends Component {
 		const { comment, comment_id, link, time, user } = update;
 		const type = update.update_type;
 		const key = time + type;
-		const oldval = update.previous;
-		const newval = update.new;
+		let oldval = '';
+		let newval = '';
+		if ( type === 'focuses' || type === 'keywords') {
+			oldval = update.previous_terms;
+			newval = update.new_terms
+		} else {
+			oldval = update.previous;
+			newval = update.new;
+		}
 		// Don't include edits
 		if ( type.indexOf( '_comment' ) === 0 ) return;
 
 		switch ( type ) {
 			case 'comment':
 				if (! comment) return;
-				return <Comment 
+				return <Comment
 					comment={comment}
 					id={comment_id}
 					ticket={this.props.ticket}
@@ -131,7 +138,7 @@ class TicketUpdates extends Component {
 				return <Update key={key} update={update}>
 						<UserLink user={user} />
 						{ ' ' }
-						{ ( addText && removeText ) ? 
+						{ ( addText && removeText ) ?
 							<span>{ addText } and { removeText }</span>
 						: ( addText || removeText ) }
 						{ ' ' + type + ' ' }
@@ -158,7 +165,7 @@ class TicketUpdates extends Component {
 				return <Update key={key} update={update}>
 						<UserLink user={user} /> changed {type} from <Label type={type} value={oldval} /> to <Label type={type} value={newval} /> <Time time={time} />
 					</Update>;
-			default: 
+			default:
 				if ( type === '_comment0' ) return;
 				let action;
 				if ( ! oldval && newval ) {
