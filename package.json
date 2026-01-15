@@ -12,7 +12,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-modal": "^3.8.1",
-    "react-scripts": "2.0.4",
+    "react-scripts": "5.0.1",
     "simple-text-parser": "^1.0.0",
     "string-hash": "^1.1.3"
   },
